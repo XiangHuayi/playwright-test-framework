@@ -12,6 +12,7 @@ lerna-debug.log*
 
 # Test reports
 reports/
+allure-results/
 
 # Environment variables
 .env
