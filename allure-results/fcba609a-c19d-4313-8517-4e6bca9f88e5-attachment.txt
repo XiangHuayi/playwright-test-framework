@@ -1,0 +1,3 @@
+info: 执行测试：测试平板端布局（768x1024） {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:43"}
+info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:43"}
+info: Waiting for home page to load completely {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:44"}

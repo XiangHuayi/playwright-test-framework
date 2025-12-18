@@ -1,0 +1,212 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link "bilibili官网" [ref=e7]:
+        - /url: https://m.bilibili.com
+        - img "bilibili官网" [ref=e11]
+      - generic [ref=e12]:
+        - link [ref=e13]:
+          - /url: /search
+          - img [ref=e14]
+        - generic [ref=e18]: 登录
+        - generic [ref=e20]: 下载 App
+    - generic [ref=e25]:
+      - img [ref=e27]
+      - list [ref=e30]:
+        - link "首页" [ref=e31]:
+          - /url: /
+        - link "番剧" [ref=e32]:
+          - /url: /channel/c/anime/
+        - link "国创" [ref=e33]:
+          - /url: /channel/c/guochuang/
+        - link "纪录片" [ref=e34]:
+          - /url: /channel/c/documentary/
+        - link "电影" [ref=e35]:
+          - /url: /channel/c/movie/
+        - link "电视剧" [ref=e36]:
+          - /url: /channel/c/tv/
+        - link "影视" [ref=e37]:
+          - /url: /channel/c/cinephile/
+        - link "娱乐" [ref=e38]:
+          - /url: /channel/c/ent/
+        - link "音乐" [ref=e39]:
+          - /url: /channel/c/music/
+        - link "舞蹈" [ref=e40]:
+          - /url: /channel/c/dance/
+        - link "动画" [ref=e41]:
+          - /url: /channel/c/douga/
+        - link "绘画" [ref=e42]:
+          - /url: /channel/c/painting/
+        - link "鬼畜" [ref=e43]:
+          - /url: /channel/c/kichiku/
+        - link "游戏" [ref=e44]:
+          - /url: /channel/c/game/
+        - link "资讯" [ref=e45]:
+          - /url: /channel/c/information/
+        - link "知识" [ref=e46]:
+          - /url: /channel/c/knowledge/
+        - link "人工智能" [ref=e47]:
+          - /url: /channel/c/ai/
+        - link "科技数码" [ref=e48]:
+          - /url: /channel/c/tech/
+        - link "汽车" [ref=e49]:
+          - /url: /channel/c/car/
+        - link "时尚美妆" [ref=e50]:
+          - /url: /channel/c/fashion/
+        - link "家装房产" [ref=e51]:
+          - /url: /channel/c/home/
+        - link "户外潮流" [ref=e52]:
+          - /url: /channel/c/outdoors/
+        - link "健身" [ref=e53]:
+          - /url: /channel/c/gym/
+        - link "体育运动" [ref=e54]:
+          - /url: /channel/c/sports/
+        - link "手工" [ref=e55]:
+          - /url: /channel/c/handmake/
+        - link "美食" [ref=e56]:
+          - /url: /channel/c/food/
+        - link "小剧场" [ref=e57]:
+          - /url: /channel/c/shortplay/
+        - link "旅游出行" [ref=e58]:
+          - /url: /channel/c/travel/
+        - link "三农" [ref=e59]:
+          - /url: /channel/c/rural/
+        - link "动物" [ref=e60]:
+          - /url: /channel/c/animal/
+        - link "亲子" [ref=e61]:
+          - /url: /channel/c/parenting/
+        - link "健康" [ref=e62]:
+          - /url: /channel/c/health/
+        - link "情感" [ref=e63]:
+          - /url: /channel/c/emotion/
+        - link "vlog" [ref=e64]:
+          - /url: /channel/c/vlog/
+        - link "生活兴趣" [ref=e65]:
+          - /url: /channel/c/life_joy/
+        - link "生活经验" [ref=e66]:
+          - /url: /channel/c/life_experience/
+        - link "直播" [ref=e67]:
+          - /url: https://live.bilibili.com/h5/
+        - link "课堂" [ref=e68]:
+          - /url: https://m.bilibili.com/cheese/home?spm_id_from=333.400.0.0
+  - generic [ref=e69]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - img "《逆战：未来》 x 琳琅天上 x 张杰，正式定档1月13日" [ref=e79]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - img [ref=e82]
+              - generic [ref=e85]: 408.9万
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - generic [ref=e93]: 2.4万
+        - paragraph [ref=e94]: 《逆战：未来》 x 琳琅天上 x 张杰，正式定档1月13日
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - img "不做网红了，出来摆摊儿，炸完你的炸你的，炸完你的炸她的！！" [ref=e100]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - generic [ref=e106]: 249.1万
+            - generic [ref=e107]:
+              - img [ref=e108]
+              - generic [ref=e114]: 1.0万
+        - paragraph [ref=e115]: 不做网红了，出来摆摊儿，炸完你的炸你的，炸完你的炸她的！！
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - img "假如《进击的巨人》发生在印度" [ref=e121]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - img [ref=e124]
+              - generic [ref=e127]: 129.6万
+            - generic [ref=e128]:
+              - img [ref=e129]
+              - generic [ref=e135]: "1438"
+        - paragraph [ref=e136]: 假如《进击的巨人》发生在印度
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - img "三国，但全女版" [ref=e142]
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e148]: 174.2万
+            - generic [ref=e149]:
+              - img [ref=e150]
+              - generic [ref=e156]: "2148"
+        - paragraph [ref=e157]: 三国，但全女版
+      - generic [ref=e158]:
+        - generic [ref=e159]:
+          - img "看我拿捏初中生～" [ref=e163]
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - img [ref=e166]
+              - generic [ref=e169]: 90.0万
+            - generic [ref=e170]:
+              - img [ref=e171]
+              - generic [ref=e177]: "623"
+        - paragraph [ref=e178]: 看我拿捏初中生～
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - img "为了做女人，我整脸，割喉，隆胸，变性，终于成了理想中的样子" [ref=e184]
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - img [ref=e187]
+              - generic [ref=e190]: 150.2万
+            - generic [ref=e191]:
+              - img [ref=e192]
+              - generic [ref=e198]: 1.0万
+        - paragraph [ref=e199]: 为了做女人，我整脸，割喉，隆胸，变性，终于成了理想中的样子
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - img "当你厕所坐标被发现后..." [ref=e205]
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e211]: 735.7万
+            - generic [ref=e212]:
+              - img [ref=e213]
+              - generic [ref=e219]: "2611"
+        - paragraph [ref=e220]: 当你厕所坐标被发现后...
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - img "十周年限定S忍漩涡鸣人·宇智波佐助初爆料及登录动画来袭！" [ref=e226]
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - img [ref=e229]
+              - generic [ref=e232]: 154.4万
+            - generic [ref=e233]:
+              - img [ref=e234]
+              - generic [ref=e240]: "6784"
+        - paragraph [ref=e241]: 十周年限定S忍漩涡鸣人·宇智波佐助初爆料及登录动画来袭！
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - img "“你和你的死对头来到无限流被迫成组队，一个月以来，矛盾从未停止，这天，面对这个副本的大boss，你们居然意料之外地默契了起来…”" [ref=e247]
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - img [ref=e250]
+              - generic [ref=e253]: 23.8万
+            - generic [ref=e254]:
+              - img [ref=e255]
+              - generic [ref=e261]: "187"
+        - paragraph [ref=e262]: “你和你的死对头来到无限流被迫成组队，一个月以来，矛盾从未停止，这天，面对这个副本的大boss，你们居然意料之外地默契了起来…”
+      - generic [ref=e263]:
+        - generic [ref=e264]:
+          - img "印度自尊摔一地" [ref=e268]
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - img [ref=e271]
+              - generic [ref=e274]: 133.0万
+            - generic [ref=e275]:
+              - img [ref=e276]
+              - generic [ref=e282]: 1.1万
+        - paragraph [ref=e283]: 印度自尊摔一地
+    - button "打开App，看你感兴趣的视频" [ref=e285]:
+      - generic [ref=e286]:
+        - paragraph [ref=e287]:
+          - img [ref=e288]
+        - text: 打开App，看你感兴趣的视频
+```

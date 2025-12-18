@@ -1,0 +1,4 @@
+info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:01:50"}
+info: 执行测试：测试关闭登录窗口 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:01:51"}
+info: Clicking login button {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:01:51"}
+info: Waiting for login page to load completely {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:01:52"}

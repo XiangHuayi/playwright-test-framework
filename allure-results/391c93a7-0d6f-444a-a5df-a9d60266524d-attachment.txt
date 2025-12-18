@@ -1,0 +1,2 @@
+info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:56"}
+info: 执行测试：测试失败登录 - 无效用户名 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:57"}

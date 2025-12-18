@@ -1,0 +1,515 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "首页" [ref=e8] [cursor=pointer]:
+            - /url: //www.bilibili.com
+            - img [ref=e9]
+            - generic [ref=e11]: 首页
+        - listitem [ref=e12]:
+          - link "番剧" [ref=e13] [cursor=pointer]:
+            - /url: //www.bilibili.com/anime/
+        - listitem [ref=e14]:
+          - link "直播" [ref=e15] [cursor=pointer]:
+            - /url: //live.bilibili.com
+        - listitem [ref=e16]:
+          - link "游戏中心" [ref=e17] [cursor=pointer]:
+            - /url: //game.bilibili.com/platform
+        - listitem [ref=e18]:
+          - link "会员购" [ref=e19] [cursor=pointer]:
+            - /url: //show.bilibili.com/platform/home.html?msource=pc_web
+        - listitem [ref=e20]:
+          - link "漫画" [ref=e21] [cursor=pointer]:
+            - /url: //manga.bilibili.com?from=bill_top_mnav
+        - listitem [ref=e22]:
+          - link "赛事" [ref=e23] [cursor=pointer]:
+            - /url: //www.bilibili.com/match/home/
+        - listitem [ref=e24]:
+          - link "下载客户端" [ref=e25] [cursor=pointer]:
+            - /url: //app.bilibili.com
+            - img [ref=e26]
+            - generic [ref=e29]: 下载客户端
+      - generic [ref=e33]:
+        - textbox "聊会电影吧" [ref=e35]
+        - img [ref=e37] [cursor=pointer]
+      - list [ref=e39]:
+        - listitem [ref=e40] [cursor=pointer]:
+          - listitem [ref=e41]:
+            - generic [ref=e43]: 登录
+            - generic [ref=e46]:
+              - paragraph [ref=e47]: 登录后你可以：
+              - generic [ref=e48]:
+                - generic [ref=e49]:
+                  - img [ref=e50]
+                  - generic [ref=e54]: 免费看高清视频
+                - generic [ref=e55]:
+                  - img [ref=e56]
+                  - generic [ref=e59]: 多端同步播放记录
+                - generic [ref=e60]:
+                  - img [ref=e61]
+                  - generic [ref=e67]: 发表弹幕/评论
+                - generic [ref=e68]:
+                  - img [ref=e69]
+                  - generic [ref=e72]: 热门番剧影视看不停
+              - generic [ref=e73]: 立即登录 立即登录
+              - generic [ref=e74]: 首次使用？ 点我注册
+        - listitem [ref=e75] [cursor=pointer]:
+          - listitem [ref=e77]:
+            - link [ref=e78]:
+              - /url: //account.bilibili.com/big
+              - img [ref=e79]
+        - listitem [ref=e83] [cursor=pointer]:
+          - img [ref=e85]
+        - listitem [ref=e88] [cursor=pointer]:
+          - img [ref=e90]
+        - listitem [ref=e96] [cursor=pointer]:
+          - img [ref=e98]
+        - listitem [ref=e101] [cursor=pointer]:
+          - img [ref=e103]
+        - listitem [ref=e105] [cursor=pointer]:
+          - img [ref=e107]
+        - listitem [ref=e111] [cursor=pointer]:
+          - listitem [ref=e112]:
+            - img [ref=e115]
+    - generic [ref=e118]:
+      - generic [ref=e120]:
+        - img [ref=e122]
+        - img [ref=e124]
+        - img [ref=e126]
+        - img [ref=e128]
+        - img [ref=e130]
+        - img [ref=e132]
+        - img [ref=e134]
+        - img [ref=e136]
+        - img [ref=e138]
+        - img [ref=e140]
+        - img [ref=e142]
+        - img [ref=e144]
+        - img [ref=e146]
+        - img [ref=e148]
+        - img [ref=e150]
+        - img [ref=e152]
+        - img [ref=e154]
+        - img [ref=e158]
+        - img [ref=e160]
+        - img [ref=e162]
+        - img [ref=e166]
+      - link "B站 b站" [ref=e168] [cursor=pointer]:
+        - /url: //www.bilibili.com
+        - img "B站 b站" [ref=e169]
+    - generic [ref=e170]:
+      - generic [ref=e171]:
+        - link "动态" [ref=e172] [cursor=pointer]:
+          - /url: //t.bilibili.com
+          - img [ref=e174]
+          - generic [ref=e179]: 动态
+        - link "热门" [ref=e180] [cursor=pointer]:
+          - /url: //www.bilibili.com/v/popular/all
+          - img [ref=e182]
+          - generic [ref=e184]: 热门
+      - generic [ref=e185]:
+        - generic [ref=e186]:
+          - link "番剧" [ref=e187] [cursor=pointer]:
+            - /url: //www.bilibili.com/anime/
+          - link "电影" [ref=e188] [cursor=pointer]:
+            - /url: //www.bilibili.com/movie/
+          - link "国创" [ref=e189] [cursor=pointer]:
+            - /url: //www.bilibili.com/guochuang/
+          - link "电视剧" [ref=e190] [cursor=pointer]:
+            - /url: //www.bilibili.com/tv/
+          - link "综艺" [ref=e191] [cursor=pointer]:
+            - /url: //www.bilibili.com/variety/
+          - link "纪录片" [ref=e192] [cursor=pointer]:
+            - /url: //www.bilibili.com/documentary/
+          - link "动画" [ref=e193] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/douga/
+          - link "游戏" [ref=e194] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/game/
+          - link "鬼畜" [ref=e195] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/kichiku/
+          - link "音乐" [ref=e196] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/music/
+          - link "舞蹈" [ref=e197] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/dance/
+          - link "影视" [ref=e198] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/cinephile/
+          - link "娱乐" [ref=e199] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/ent/
+          - link "知识" [ref=e200] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/knowledge/
+          - link "科技数码" [ref=e201] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/tech/
+          - link "资讯" [ref=e202] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/information/
+          - link "美食" [ref=e203] [cursor=pointer]:
+            - /url: //www.bilibili.com/c/food/
+          - generic [ref=e204]:
+            - text: 更多
+            - img [ref=e205]
+        - generic [ref=e208]:
+          - link "专栏" [ref=e209] [cursor=pointer]:
+            - /url: //www.bilibili.com/read/home/
+            - generic [ref=e210]: 专栏
+          - link "直播" [ref=e211] [cursor=pointer]:
+            - /url: //live.bilibili.com
+            - generic [ref=e212]: 直播
+          - link "活动" [ref=e213] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/activity-list.html?
+            - generic [ref=e214]: 活动
+          - link "课堂" [ref=e215] [cursor=pointer]:
+            - /url: //www.bilibili.com/cheese/?csource=common_hp_channelclass_icon
+            - generic [ref=e216]: 课堂
+          - link "社区中心" [ref=e217] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/activity-5zJxM3spoS.html
+            - generic [ref=e218]: 社区中心
+          - link "新歌热榜" [ref=e219] [cursor=pointer]:
+            - /url: //music.bilibili.com/pc/music-center/
+            - generic [ref=e220]: 新歌热榜
+  - main [ref=e221]:
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - generic [ref=e231]:
+          - generic [ref=e232]:
+            - generic [ref=e235]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "看视频和UP主一起科学体重管理！" [ref=e236] [cursor=pointer]:
+                - /url: https://www.bilibili.com/blackboard/era/xL1i0fC4BQRQCTET.html
+                - img "看视频和UP主一起科学体重管理！" [ref=e238]
+            - generic [ref=e241]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "名场面上线！嫌疑人声称拥有派出所产权>>" [ref=e242] [cursor=pointer]:
+                - /url: https://www.bilibili.com/bangumi/play/ep2454755
+                - img "名场面上线！嫌疑人声称拥有派出所产权>>" [ref=e244]
+            - generic [ref=e247]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "B站好片有奖种草19.0" [ref=e248] [cursor=pointer]:
+                - /url: https://www.bilibili.com/blackboard/era/ps0ui6pqBHz2D5Uz.html
+                - img "B站好片有奖种草19.0" [ref=e250]
+            - generic [ref=e253]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "新生儿患严重脑积水 家属将如何抉择？" [ref=e254] [cursor=pointer]:
+                - /url: https://www.bilibili.com/bangumi/play/ep2424250
+                - img "新生儿患严重脑积水 家属将如何抉择？" [ref=e256]
+            - generic [ref=e259]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "弑神啦！动作元素反应+国产开放世界新游戏！" [ref=e260] [cursor=pointer]:
+                - /url: //www.bilibili.com/video/BV11ySbBUE8x?track_id=
+                - img "弑神啦！动作元素反应+国产开放世界新游戏！" [ref=e262]
+            - generic [ref=e265]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "鉴定网络交通事故视频" [ref=e266] [cursor=pointer]:
+                - /url: //www.bilibili.com/video/BV1D2UbBWEF6?track_id=
+                - img "鉴定网络交通事故视频" [ref=e268]
+            - generic [ref=e271]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "数字游民的田园新家！" [ref=e272] [cursor=pointer]:
+                - /url: https://www.bilibili.com/bangumi/play/ep2453804
+                - img "数字游民的田园新家！" [ref=e274]
+            - generic [ref=e277]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "释放阿凡达入驻B站！我们来读大家的评论了" [ref=e278] [cursor=pointer]:
+                - /url: //www.bilibili.com/video/BV1oM2iB1EvK?track_id=
+                - img "释放阿凡达入驻B站！我们来读大家的评论了" [ref=e280]
+            - generic [ref=e283]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "新歌《微尘》首唱！陶喆鸟巢官摄来袭" [ref=e284] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1zE4m197EY/?spm_id_from=333.337.search-card.all.click&vd_source=c4e812b64b50d4f971f49b26390c49a7
+                - img "新歌《微尘》首唱！陶喆鸟巢官摄来袭" [ref=e286]
+            - generic [ref=e289]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "看视频和UP主一起科学体重管理！" [ref=e290] [cursor=pointer]:
+                - /url: https://www.bilibili.com/blackboard/era/xL1i0fC4BQRQCTET.html
+                - img "看视频和UP主一起科学体重管理！" [ref=e292]
+            - generic [ref=e295]:
+              - generic: 该内容被AdBlock类插件屏蔽 请检查插件以恢复正常内容展示
+              - link "名场面上线！嫌疑人声称拥有派出所产权>>" [ref=e296] [cursor=pointer]:
+                - /url: https://www.bilibili.com/bangumi/play/ep2454755
+                - img "名场面上线！嫌疑人声称拥有派出所产权>>" [ref=e298]
+          - generic:
+            - link "名场面上线！嫌疑人声称拥有派出所产权>>" [ref=e301] [cursor=pointer]:
+              - /url: https://www.bilibili.com/bangumi/play/ep2454755
+              - generic [ref=e302]: 名场面上线！嫌疑人声称拥有派出所产权>>
+            - list [ref=e304]:
+              - listitem [ref=e305] [cursor=pointer]
+              - listitem [ref=e308] [cursor=pointer]
+              - listitem [ref=e311] [cursor=pointer]
+              - listitem [ref=e314] [cursor=pointer]
+              - listitem [ref=e317] [cursor=pointer]
+              - listitem [ref=e320] [cursor=pointer]
+              - listitem [ref=e323] [cursor=pointer]
+              - listitem [ref=e326] [cursor=pointer]
+              - listitem [ref=e329] [cursor=pointer]
+          - generic [ref=e332]:
+            - button [ref=e333] [cursor=pointer]:
+              - img [ref=e334]
+            - button [ref=e336] [cursor=pointer]:
+              - img [ref=e337]
+        - generic [ref=e342]:
+          - link "《FGO史上最震撼的三重套娃》锐评冠位术所罗门 11.5万 357 07:42" [ref=e343] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1zk2eByEpA
+            - generic [ref=e344]:
+              - img "《FGO史上最震撼的三重套娃》锐评冠位术所罗门" [ref=e347]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 11.5万
+                    - generic:
+                      - img
+                      - generic: "357"
+                  - generic: 07:42
+          - generic [ref=e349]:
+            - heading "《FGO史上最震撼的三重套娃》锐评冠位术所罗门" [level=3] [ref=e350]:
+              - link "《FGO史上最震撼的三重套娃》锐评冠位术所罗门" [ref=e351] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1zk2eByEpA
+            - link "冥冥meichan · 昨天" [ref=e353] [cursor=pointer]:
+              - /url: //space.bilibili.com/45502
+              - img [ref=e354]
+              - generic "冥冥meichan" [ref=e358]
+              - generic [ref=e359]: · 昨天
+        - generic [ref=e363]:
+          - link "老版本载入史册，新版本重大变革，MC开启新时代 45.4万 457 07:01" [ref=e364] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1oxShBzEna
+            - generic [ref=e365]:
+              - img "老版本载入史册，新版本重大变革，MC开启新时代" [ref=e368]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 45.4万
+                    - generic:
+                      - img
+                      - generic: "457"
+                  - generic: 07:01
+          - generic [ref=e370]:
+            - heading "老版本载入史册，新版本重大变革，MC开启新时代" [level=3] [ref=e371]:
+              - link "老版本载入史册，新版本重大变革，MC开启新时代" [ref=e372] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1oxShBzEna
+            - link "籽岷 · 12-3" [ref=e374] [cursor=pointer]:
+              - /url: //space.bilibili.com/686127
+              - img [ref=e375]
+              - generic "籽岷" [ref=e379]
+              - generic [ref=e380]: · 12-3
+        - generic [ref=e384]:
+          - link "哈哈哈哈哈蒙眼打人 44.1万 449 02:46" [ref=e385] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1pRShBDEkU
+            - generic [ref=e386]:
+              - img "哈哈哈哈哈蒙眼打人" [ref=e389]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 44.1万
+                    - generic:
+                      - img
+                      - generic: "449"
+                  - generic: 02:46
+          - generic [ref=e391]:
+            - heading "哈哈哈哈哈蒙眼打人" [level=3] [ref=e392]:
+              - link "哈哈哈哈哈蒙眼打人" [ref=e393] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1pRShBDEkU
+            - link "牛小豪吖 · 12-3" [ref=e395] [cursor=pointer]:
+              - /url: //space.bilibili.com/3461572842228424
+              - img [ref=e396]
+              - generic "牛小豪吖" [ref=e400]
+              - generic [ref=e401]: · 12-3
+        - generic [ref=e405]:
+          - link "拉 矢 27.2万 402 08:17" [ref=e406] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV17FSzB8Et2
+            - generic [ref=e407]:
+              - img "拉 矢" [ref=e410]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 27.2万
+                    - generic:
+                      - img
+                      - generic: "402"
+                  - generic: 08:17
+          - generic [ref=e412]:
+            - heading "拉 矢" [level=3] [ref=e413]:
+              - link "拉 矢" [ref=e414] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV17FSzB8Et2
+            - link "战术级子轩 · 12-1" [ref=e416] [cursor=pointer]:
+              - /url: //space.bilibili.com/3519797
+              - img [ref=e417]
+              - generic "战术级子轩" [ref=e421]
+              - generic [ref=e422]: · 12-1
+        - generic [ref=e426]:
+          - link "惊变卡莫纳全集 32.9万 1376 17:00" [ref=e427] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1sKUoBxEda
+            - generic [ref=e428]:
+              - img "惊变卡莫纳全集" [ref=e431]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 32.9万
+                    - generic:
+                      - img
+                      - generic: "1376"
+                  - generic: 17:00
+          - generic [ref=e433]:
+            - heading "惊变卡莫纳全集" [level=3] [ref=e434]:
+              - link "惊变卡莫纳全集" [ref=e435] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1sKUoBxEda
+            - link "粒了-暗区突围 · 11-29" [ref=e437] [cursor=pointer]:
+              - /url: //space.bilibili.com/3546762270738506
+              - img [ref=e438]
+              - generic "粒了-暗区突围" [ref=e442]
+              - generic [ref=e443]: · 11-29
+        - generic [ref=e447]:
+          - link "能抽象到什么程度？盘点唱歌中那些‘史诗级’的抽象名词！ 5.1万 252 10:55" [ref=e448] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1qX2iB1EJC
+            - generic [ref=e449]:
+              - img "能抽象到什么程度？盘点唱歌中那些‘史诗级’的抽象名词！" [ref=e452]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 5.1万
+                    - generic:
+                      - img
+                      - generic: "252"
+                  - generic: 10:55
+          - generic [ref=e454]:
+            - heading "能抽象到什么程度？盘点唱歌中那些‘史诗级’的抽象名词！" [level=3] [ref=e455]:
+              - link "能抽象到什么程度？盘点唱歌中那些‘史诗级’的抽象名词！" [ref=e456] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1qX2iB1EJC
+            - link "Jason-老湿 · 昨天" [ref=e458] [cursor=pointer]:
+              - /url: //space.bilibili.com/540564177
+              - img [ref=e459]
+              - generic "Jason-老湿" [ref=e463]
+              - generic [ref=e464]: · 昨天
+        - generic [ref=e468]:
+          - link "无需多言，每一颗子弹都是答案！ 12.9万 128 01:27" [ref=e469] [cursor=pointer]:
+            - /url: https://www.bilibili.com/video/BV1J22iBDE9r
+            - generic [ref=e470]:
+              - img "无需多言，每一颗子弹都是答案！" [ref=e473]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 12.9万
+                    - generic:
+                      - img
+                      - generic: "128"
+                  - generic: 01:27
+          - generic [ref=e475]:
+            - heading "无需多言，每一颗子弹都是答案！" [level=3] [ref=e476]:
+              - link "无需多言，每一颗子弹都是答案！" [ref=e477] [cursor=pointer]:
+                - /url: https://www.bilibili.com/video/BV1J22iBDE9r
+            - link "使命召唤手游官方 · 昨天" [ref=e479] [cursor=pointer]:
+              - /url: //space.bilibili.com/417296980
+              - img [ref=e480]
+              - generic "使命召唤手游官方" [ref=e484]
+              - generic [ref=e485]: · 昨天
+        - generic [ref=e488]:
+          - link "直播 981 颜值" [ref=e490] [cursor=pointer]:
+            - /url: //live.bilibili.com/21650692?hotRank=0&live_from=81003
+            - generic [ref=e493]:
+              - img [ref=e494]
+              - generic [ref=e498]: 直播
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic: "981"
+                - generic:
+                  - generic: 颜值
+          - generic [ref=e499]:
+            - paragraph [ref=e500]:
+              - link "直播中 不好看直接喷" [ref=e501] [cursor=pointer]:
+                - /url: //live.bilibili.com/21650692?hotRank=0&live_from=81003
+                - generic [ref=e504]: 直播中
+                - text: 不好看直接喷
+            - paragraph [ref=e505]:
+              - link "艺柠煤气罐" [ref=e506] [cursor=pointer]:
+                - /url: //space.bilibili.com/95135476
+                - img [ref=e507]
+                - generic [ref=e511]: 艺柠煤气罐
+        - generic [ref=e514]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e515]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e516]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e527]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e528]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e529]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e539]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e540]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+        - generic [ref=e541]:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph
+                - paragraph
+                - paragraph
+      - button "换一换" [ref=e552] [cursor=pointer]:
+        - img [ref=e553]
+        - generic [ref=e557]: 换一换
+  - generic [ref=e559] [cursor=pointer]:
+    - img [ref=e562]
+    - generic [ref=e566]:
+      - img [ref=e568]
+      - generic [ref=e570]: 点击视频卡片右上角添加！
+```

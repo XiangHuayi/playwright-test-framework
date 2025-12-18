@@ -1,0 +1,3 @@
+info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:20:06"}
+info: 执行测试：测试搜索结果分页功能 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:20:07"}
+info: Searching for keyword: Python教程 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:20:07"}

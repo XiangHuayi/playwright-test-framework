@@ -1,0 +1,4 @@
+info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:23:21"}
+info: 执行测试：测试成功登录 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:23:22"}
+info: Loaded JSON test data from /Users/xianghuayi/Documents/trae_projects/bilibili-test-framework/src/testdata/userData.json {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:23:22"}
+info: Clicking login button {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:23:22"}
