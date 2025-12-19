@@ -1,4 +1,0 @@
-info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-10 16:24:24"}
-info: 执行测试：测试搜索功能 {"service":"bilibili-test-framework","timestamp":"2025-12-10 16:24:26"}
-info: Loaded CSV test data from C:\Users\jxianghu\Documents\trae_projects\bilibili-test-framework\src\testdata\searchKeywords.csv {"service":"bilibili-test-framework","timestamp":"2025-12-10 16:24:26"}
-info: Searching for keyword: Python教程 {"service":"bilibili-test-framework","timestamp":"2025-12-10 16:24:26"}

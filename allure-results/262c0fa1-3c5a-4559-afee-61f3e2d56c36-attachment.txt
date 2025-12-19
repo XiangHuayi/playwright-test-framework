@@ -1,3 +1,0 @@
-info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:26:48"}
-info: 执行测试：测试搜索建议功能 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:26:49"}
-info: Showing search history {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:26:49"}

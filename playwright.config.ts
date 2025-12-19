@@ -10,9 +10,9 @@ export default defineConfig({
   testDir: './tests',
   
   // Timeout settings
-  timeout: 30 * 1000,
+  timeout: parseInt(process.env.PAGE_TIMEOUT || '30000'),
   expect: {
-    timeout: 5000
+    timeout: parseInt(process.env.ELEMENT_TIMEOUT || '5000')
   },
   
   // Run tests in files in parallel
@@ -36,7 +36,7 @@ export default defineConfig({
   // Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions.
   use: {
     // Base URL to use in actions like `await page.goto('/')`
-    baseURL: 'https://parabank.parasoft.com/parabank/index.htm',
+    baseURL: process.env.BASE_URL,
     
     // Collect trace when retrying the failed test
     trace: 'on-first-retry',
@@ -51,7 +51,7 @@ export default defineConfig({
     viewport: { width: 1280, height: 720 },
     
     // Timeout for navigation actions
-    navigationTimeout: 10000
+    navigationTimeout: parseInt(process.env.PAGE_TIMEOUT || '30000')
   },
   
   // Configure projects for major browsers
@@ -86,3 +86,6 @@ export default defineConfig({
   // Output directory for test artifacts
   outputDir: './reports/test-results/'
 });
+
+
+

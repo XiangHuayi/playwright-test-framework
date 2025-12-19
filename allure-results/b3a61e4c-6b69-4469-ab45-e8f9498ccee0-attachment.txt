@@ -1,2 +1,0 @@
-info: 执行测试：测试不同屏幕尺寸下的导航菜单 {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:46"}
-info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:02:46"}
