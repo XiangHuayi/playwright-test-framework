@@ -1,4 +1,0 @@
-info: Navigating to Bilibili home page {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:04:52"}
-info: Loaded JSON test data from /Users/xianghuayi/Documents/trae_projects/bilibili-test-framework/src/testdata/userData.json {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:04:54"}
-info: Clicking login button {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:04:54"}
-info: Waiting for login page to load completely {"service":"bilibili-test-framework","timestamp":"2025-12-05 23:04:54"}
