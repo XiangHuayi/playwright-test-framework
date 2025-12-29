@@ -1,6 +1,7 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { logger } from '../../utils/logger';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 /**
  * Bilibili Search Results Page
@@ -33,29 +34,36 @@ export class SearchResultsPage extends BasePage {
   constructor(page: Page) {
     super(page);
     
+    // Load locators from YAML
+    const searchResultsPageLocators = LocatorManager.getPageLocators('bilibili.searchResultsPage');
+    
+    if (!searchResultsPageLocators) {
+      throw new Error('Failed to load locators for search results page');
+    }
+    
     // Initialize locators
-    this.searchInput = page.locator('#nav-searchform > input');
-    this.searchButton = page.locator('#nav-searchform > div > button');
-    this.searchKeywords = page.locator('.search-keyword');
-    this.searchResultsCount = page.locator('.order-total');
-    this.videoResults = page.locator('#i_cecream > div:nth-child(2)');
-    this.filterTabs = page.locator('.filter-tabs');
-    this.sortDropdown = page.locator('.sort-dropdown');
-    this.filterOptions = page.locator('.filter-options');
-    this.pagination = page.locator('.pagination');
-    this.currentPage = page.locator('.pagination > ul > li.page-item.active');
-    this.totalPages = page.locator('.pagination > ul > li:nth-last-child(2)');
-    this.nextPageButton = page.locator('.pagination > ul > li.next-page');
-    this.previousPageButton = page.locator('.pagination > ul > li.pre-page');
-    this.searchSuggestions = page.locator('.search-suggestion');
-    this.searchHistory = page.locator('.search-history');
-    this.emptyResults = page.locator('.empty-results');
-    this.resultCards = page.locator('.bili-video-card');
-    this.resultTitles = page.locator('.bili-video-card__info--right > h3 > a');
-    this.resultAuthors = page.locator('.bili-video-card__info--right > p:nth-child(3) > a');
-    this.resultViews = page.locator('.bili-video-card__stats > span:nth-child(1)');
-    this.resultDates = page.locator('.bili-video-card__stats > span:nth-child(3)');
-    this.relatedSearches = page.locator('.related-searches');
+    this.searchInput = page.locator(searchResultsPageLocators.searchInput);
+    this.searchButton = page.locator(searchResultsPageLocators.searchButton);
+    this.searchKeywords = page.locator(searchResultsPageLocators.searchKeywords);
+    this.searchResultsCount = page.locator(searchResultsPageLocators.searchResultsCount);
+    this.videoResults = page.locator(searchResultsPageLocators.videoResults);
+    this.filterTabs = page.locator(searchResultsPageLocators.filterTabs);
+    this.sortDropdown = page.locator(searchResultsPageLocators.sortDropdown);
+    this.filterOptions = page.locator(searchResultsPageLocators.filterOptions);
+    this.pagination = page.locator(searchResultsPageLocators.pagination);
+    this.currentPage = page.locator(searchResultsPageLocators.currentPage);
+    this.totalPages = page.locator(searchResultsPageLocators.totalPages);
+    this.nextPageButton = page.locator(searchResultsPageLocators.nextPageButton);
+    this.previousPageButton = page.locator(searchResultsPageLocators.previousPageButton);
+    this.searchSuggestions = page.locator(searchResultsPageLocators.searchSuggestions);
+    this.searchHistory = page.locator(searchResultsPageLocators.searchHistory);
+    this.emptyResults = page.locator(searchResultsPageLocators.emptyResults);
+    this.resultCards = page.locator(searchResultsPageLocators.resultCards);
+    this.resultTitles = page.locator(searchResultsPageLocators.resultTitles);
+    this.resultAuthors = page.locator(searchResultsPageLocators.resultAuthors);
+    this.resultViews = page.locator(searchResultsPageLocators.resultViews);
+    this.resultDates = page.locator(searchResultsPageLocators.resultDates);
+    this.relatedSearches = page.locator(searchResultsPageLocators.relatedSearches);
   }
 
   /**
@@ -280,3 +288,4 @@ export class SearchResultsPage extends BasePage {
     await this.waitForNetworkIdle();
   }
 }
+

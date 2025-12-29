@@ -1,20 +1,39 @@
 import { Page } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 export class HomePage extends BasePage {
   // Locators
-  private readonly accountOverviewLink = 'a[href="/parabank/overview.htm"]';
-  private readonly transferFundsLink = 'a[href="/parabank/transfer.htm"]';
-  private readonly billPayLink = 'a[href="/parabank/billpay.htm"]';
-  private readonly findTransactionsLink = 'a[href="/parabank/findtrans.htm"]';
-  private readonly updateContactInfoLink = 'a[href="/parabank/updateprofile.htm"]';
-  private readonly logoutLink = 'a[href="/parabank/logout.htm"]';
-  private readonly welcomeMessage = 'p:has-text("Welcome")';
-  private readonly accountNumberLinks = 'a[href^="/parabank/activity.htm?id="]';
-  private readonly balanceAmounts = '.balance';
+  private readonly accountOverviewLink: string;
+  private readonly transferFundsLink: string;
+  private readonly billPayLink: string;
+  private readonly findTransactionsLink: string;
+  private readonly updateContactInfoLink: string;
+  private readonly logoutLink: string;
+  private readonly welcomeMessage: string;
+  private readonly accountNumberLinks: string;
+  private readonly balanceAmounts: string;
 
   constructor(page: Page) {
     super(page);
+    
+    // Load locators from YAML
+    const homePageLocators = LocatorManager.getPageLocators('parabank.homePage');
+    
+    if (!homePageLocators) {
+      throw new Error('Failed to load locators for Parabank home page');
+    }
+    
+    // Initialize locators
+    this.accountOverviewLink = homePageLocators.accountOverviewLink;
+    this.transferFundsLink = homePageLocators.transferFundsLink;
+    this.billPayLink = homePageLocators.billPayLink;
+    this.findTransactionsLink = homePageLocators.findTransactionsLink;
+    this.updateContactInfoLink = homePageLocators.updateContactInfoLink;
+    this.logoutLink = homePageLocators.logoutLink;
+    this.welcomeMessage = homePageLocators.welcomeMessage;
+    this.accountNumberLinks = homePageLocators.accountNumberLinks;
+    this.balanceAmounts = homePageLocators.balanceAmounts;
   }
 
   /**

@@ -1,17 +1,33 @@
 import { Page } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 export class TransferFundsPage extends BasePage {
-  // Locators
-  private readonly amountInput = '#amount';
-  private readonly fromAccountSelect = '#fromAccountId';
-  private readonly toAccountSelect = '#toAccountId';
-  private readonly transferButton = '.button[value="Transfer"]';
-  private readonly successMessage = '.title';
-  private readonly errorMessage = '.error';
+  // Page elements
+  private readonly amountInput: string;
+  private readonly fromAccountSelect: string;
+  private readonly toAccountSelect: string;
+  private readonly transferButton: string;
+  private readonly successMessage: string;
+  private readonly errorMessage: string;
 
   constructor(page: Page) {
     super(page);
+    
+    // Load locators from YAML
+    const transferFundsPageLocators = LocatorManager.getPageLocators('parabank.transferFundsPage');
+    
+    if (!transferFundsPageLocators) {
+      throw new Error('Failed to load locators for transfer funds page');
+    }
+    
+    // Initialize locators
+    this.amountInput = transferFundsPageLocators.amountInput;
+    this.fromAccountSelect = transferFundsPageLocators.fromAccountSelect;
+    this.toAccountSelect = transferFundsPageLocators.toAccountSelect;
+    this.transferButton = transferFundsPageLocators.transferButton;
+    this.successMessage = transferFundsPageLocators.successMessage;
+    this.errorMessage = transferFundsPageLocators.errorMessage;
   }
 
   /**

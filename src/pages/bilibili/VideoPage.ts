@@ -1,6 +1,7 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { logger } from '../../utils/logger';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 /**
  * Bilibili Video Page
@@ -40,36 +41,43 @@ export class VideoPage extends BasePage {
   constructor(page: Page) {
     super(page);
     
+    // Load locators from YAML
+    const videoPageLocators = LocatorManager.getPageLocators('bilibili.videoPage');
+    
+    if (!videoPageLocators) {
+      throw new Error('Failed to load locators for video page');
+    }
+    
     // Initialize locators
-    this.videoPlayer = page.locator('.bpx-player-container');
-    this.playButton = page.locator('.bpx-player-ctrl-btn.bpx-player-ctrl-play');
-    this.pauseButton = page.locator('.bpx-player-ctrl-btn.bpx-player-ctrl-pause');
-    this.progressBar = page.locator('.bpx-player-ctrl-progress');
-    this.currentTime = page.locator('.bpx-player-ctrl-time-current');
-    this.totalTime = page.locator('.bpx-player-ctrl-time-total');
-    this.volumeControl = page.locator('.bpx-player-ctrl-btn-volume');
-    this.fullscreenButton = page.locator('.bpx-player-ctrl-btn-full');
-    this.danmakuInput = page.locator('#bpx-player-dm-input');
-    this.danmakuSendButton = page.locator('#bpx-player-dm-send');
-    this.danmakuSettings = page.locator('.bpx-player-ctrl-btn-dm-setting');
-    this.commentsSection = page.locator('.comment-section');
-    this.commentInput = page.locator('.comment-input-box > textarea');
-    this.commentSendButton = page.locator('.comment-submit > button');
-    this.commentsList = page.locator('.list-item');
-    this.likeButton = page.locator('.video-like');
-    this.coinButton = page.locator('.video-coin');
-    this.favoriteButton = page.locator('.video-fav');
-    this.shareButton = page.locator('.video-share');
-    this.videoTitle = page.locator('.video-title > h1');
-    this.upName = page.locator('.up-name');
-    this.viewCount = page.locator('.video-data > span:nth-child(1)');
-    this.likeCount = page.locator('.video-data > span:nth-child(2)');
-    this.commentCount = page.locator('.video-data > span:nth-child(3)');
-    this.favoriteCount = page.locator('.video-data > span:nth-child(4)');
-    this.relatedVideos = page.locator('.related-video-item');
-    this.subscribeButton = page.locator('.up-action > div > button');
-    this.videoTags = page.locator('.tag-area > a');
-    this.videoDescription = page.locator('.video-desc');
+    this.videoPlayer = page.locator(videoPageLocators.videoPlayer);
+    this.playButton = page.locator(videoPageLocators.playButton);
+    this.pauseButton = page.locator(videoPageLocators.pauseButton);
+    this.progressBar = page.locator(videoPageLocators.progressBar);
+    this.currentTime = page.locator(videoPageLocators.currentTime);
+    this.totalTime = page.locator(videoPageLocators.totalTime);
+    this.volumeControl = page.locator(videoPageLocators.volumeControl);
+    this.fullscreenButton = page.locator(videoPageLocators.fullscreenButton);
+    this.danmakuInput = page.locator(videoPageLocators.danmakuInput);
+    this.danmakuSendButton = page.locator(videoPageLocators.danmakuSendButton);
+    this.danmakuSettings = page.locator(videoPageLocators.danmakuSettings);
+    this.commentsSection = page.locator(videoPageLocators.commentsSection);
+    this.commentInput = page.locator(videoPageLocators.commentInput);
+    this.commentSendButton = page.locator(videoPageLocators.commentSendButton);
+    this.commentsList = page.locator(videoPageLocators.commentsList);
+    this.likeButton = page.locator(videoPageLocators.likeButton);
+    this.coinButton = page.locator(videoPageLocators.coinButton);
+    this.favoriteButton = page.locator(videoPageLocators.favoriteButton);
+    this.shareButton = page.locator(videoPageLocators.shareButton);
+    this.videoTitle = page.locator(videoPageLocators.videoTitle);
+    this.upName = page.locator(videoPageLocators.upName);
+    this.viewCount = page.locator(videoPageLocators.viewCount);
+    this.likeCount = page.locator(videoPageLocators.likeCount);
+    this.commentCount = page.locator(videoPageLocators.commentCount);
+    this.favoriteCount = page.locator(videoPageLocators.favoriteCount);
+    this.relatedVideos = page.locator(videoPageLocators.relatedVideos);
+    this.subscribeButton = page.locator(videoPageLocators.subscribeButton);
+    this.videoTags = page.locator(videoPageLocators.videoTags);
+    this.videoDescription = page.locator(videoPageLocators.videoDescription);
   }
 
   /**

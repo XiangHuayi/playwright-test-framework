@@ -1,17 +1,33 @@
 import { Page } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 export class LoginPage extends BasePage {
   // Locators
-  private readonly usernameInput = '.login input[name="username"]';
-  private readonly passwordInput = '.login input[name="password"]';
-  private readonly loginButton = '.login [type="submit"]';
-  private readonly registerLink = 'a[href="/parabank/register.htm"]';
-  private readonly errorMessage = '.error';
-  private readonly welcomeMessage = '.title';
+  private readonly usernameInput: string;
+  private readonly passwordInput: string;
+  private readonly loginButton: string;
+  private readonly registerLink: string;
+  private readonly errorMessage: string;
+  private readonly welcomeMessage: string;
 
   constructor(page: Page) {
     super(page);
+    
+    // Load locators from YAML
+    const loginPageLocators = LocatorManager.getPageLocators('parabank.loginPage');
+    
+    if (!loginPageLocators) {
+      throw new Error('Failed to load locators for Parabank login page');
+    }
+    
+    // Initialize locators
+    this.usernameInput = loginPageLocators.usernameInput;
+    this.passwordInput = loginPageLocators.passwordInput;
+    this.loginButton = loginPageLocators.loginButton;
+    this.registerLink = loginPageLocators.registerLink;
+    this.errorMessage = loginPageLocators.errorMessage;
+    this.welcomeMessage = loginPageLocators.welcomeMessage;
   }
 
   /**

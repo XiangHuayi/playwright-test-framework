@@ -1,24 +1,47 @@
 import { Page } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 export class BillPayPage extends BasePage {
-  // Locators
-  private readonly payeeNameInput = '#payee\.name';
-  private readonly payeeAddressInput = '#payee\.address\.street';
-  private readonly payeeCityInput = '#payee\.address\.city';
-  private readonly payeeStateInput = '#payee\.address\.state';
-  private readonly payeeZipCodeInput = '#payee\.address\.zipCode';
-  private readonly payeePhoneInput = '#payee\.phoneNumber';
-  private readonly payeeAccountInput = '#payee\.accountNumber';
-  private readonly payeeVerifyAccountInput = '#verifyAccount';
-  private readonly amountInput = '#amount';
-  private readonly fromAccountSelect = '#fromAccountId';
-  private readonly sendPaymentButton = 'input[type="submit"].button[value="Send Payment"]';
-  private readonly successMessage = '.title';
-  private readonly errorMessages = '.error';
+  // Page elements
+  private readonly payeeNameInput: string;
+  private readonly payeeAddressInput: string;
+  private readonly payeeCityInput: string;
+  private readonly payeeStateInput: string;
+  private readonly payeeZipCodeInput: string;
+  private readonly payeePhoneInput: string;
+  private readonly payeeAccountInput: string;
+  private readonly payeeVerifyAccountInput: string;
+  private readonly amountInput: string;
+  private readonly fromAccountSelect: string;
+  private readonly sendPaymentButton: string;
+  private readonly successMessage: string;
+  private readonly errorMessages: string;
 
   constructor(page: Page) {
     super(page);
+    
+    // Load locators from YAML
+    const billPayPageLocators = LocatorManager.getPageLocators('parabank.billPayPage');
+    
+    if (!billPayPageLocators) {
+      throw new Error('Failed to load locators for bill pay page');
+    }
+    
+    // Initialize locators
+    this.payeeNameInput = billPayPageLocators.payeeNameInput;
+    this.payeeAddressInput = billPayPageLocators.payeeAddressInput;
+    this.payeeCityInput = billPayPageLocators.payeeCityInput;
+    this.payeeStateInput = billPayPageLocators.payeeStateInput;
+    this.payeeZipCodeInput = billPayPageLocators.payeeZipCodeInput;
+    this.payeePhoneInput = billPayPageLocators.payeePhoneInput;
+    this.payeeAccountInput = billPayPageLocators.payeeAccountInput;
+    this.payeeVerifyAccountInput = billPayPageLocators.payeeVerifyAccountInput;
+    this.amountInput = billPayPageLocators.amountInput;
+    this.fromAccountSelect = billPayPageLocators.fromAccountSelect;
+    this.sendPaymentButton = billPayPageLocators.sendPaymentButton;
+    this.successMessage = billPayPageLocators.successMessage;
+    this.errorMessages = billPayPageLocators.errorMessages;
   }
 
   /**

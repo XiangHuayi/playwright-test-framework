@@ -1,6 +1,7 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { logger } from '../../utils/logger';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 /**
  * Bilibili Login Page
@@ -25,21 +26,28 @@ export class LoginPage extends BasePage {
   constructor(page: Page) {
     super(page);
     
+    // Load locators from YAML
+    const loginPageLocators = LocatorManager.getPageLocators('bilibili.loginPage');
+    
+    if (!loginPageLocators) {
+      throw new Error('Failed to load locators for login page');
+    }
+    
     // Initialize locators
-    this.usernameInput = page.locator('#login-username');
-    this.passwordInput = page.locator('#login-passwd');
-    this.loginSubmitButton = page.locator('#geetest-wrap > div > div.btn-box > a.btn.btn-login');
-    this.qrCodeLoginTab = page.locator('.login-type > ul > li:nth-child(1)');
-    this.passwordLoginTab = page.locator('.login-type > ul > li:nth-child(2)');
-    this.mobileLoginTab = page.locator('.login-type > ul > li:nth-child(3)');
-    this.qrCodeContainer = page.locator('.login-qrcode');
-    this.errorMessage = page.locator('.error-tip');
-    this.forgetPasswordLink = page.locator('.forgetpwd');
-    this.registerLink = page.locator('.register-link');
-    this.closeButton = page.locator('.login-mask-close');
-    this.captchaImage = page.locator('.geetest_item_img');
-    this.captchaInput = page.locator('.geetest_input');
-    this.loginForm = page.locator('.login-form');
+    this.usernameInput = page.locator(loginPageLocators.usernameInput);
+    this.passwordInput = page.locator(loginPageLocators.passwordInput);
+    this.loginSubmitButton = page.locator(loginPageLocators.loginSubmitButton);
+    this.qrCodeLoginTab = page.locator(loginPageLocators.qrCodeLoginTab);
+    this.passwordLoginTab = page.locator(loginPageLocators.passwordLoginTab);
+    this.mobileLoginTab = page.locator(loginPageLocators.mobileLoginTab);
+    this.qrCodeContainer = page.locator(loginPageLocators.qrCodeContainer);
+    this.errorMessage = page.locator(loginPageLocators.errorMessage);
+    this.forgetPasswordLink = page.locator(loginPageLocators.forgetPasswordLink);
+    this.registerLink = page.locator(loginPageLocators.registerLink);
+    this.closeButton = page.locator(loginPageLocators.closeButton);
+    this.captchaImage = page.locator(loginPageLocators.captchaImage);
+    this.captchaInput = page.locator(loginPageLocators.captchaInput);
+    this.loginForm = page.locator(loginPageLocators.loginForm);
   }
 
   /**

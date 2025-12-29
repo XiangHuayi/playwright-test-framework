@@ -1,6 +1,7 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
 import { logger } from '../../utils/logger';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 /**
  * Bilibili Home Page
@@ -23,19 +24,26 @@ export class HomePage extends BasePage {
   constructor(page: Page) {
     super(page);
     
+    // Load locators from YAML
+    const homePageLocators = LocatorManager.getPageLocators('bilibili.homePage');
+    
+    if (!homePageLocators) {
+      throw new Error('Failed to load locators for home page');
+    }
+    
     // Initialize locators
-    this.loginButton = page.locator('.header-login-entry');
-    this.searchInput = page.locator('#nav-searchform > input');
-    this.searchButton = page.locator('#nav-searchform > div > button');
-    this.searchHistory = page.locator('.search-history');
-    this.userAvatar = page.locator('.header-avatar-wrap');
-    this.navMenu = page.locator('.nav-menu');
-    this.videoCards = page.locator('.bili-video-card');
-    this.featuredSection = page.locator('#i_cecream > div:nth-child(2) > div > div');
-    this.liveSection = page.locator('.live-entry');
-    this.animeSection = page.locator('.anime-entry');
-    this.gameSection = page.locator('.game-entry');
-    this.footer = page.locator('.footer');
+    this.loginButton = page.locator(homePageLocators.loginButton);
+    this.searchInput = page.locator(homePageLocators.searchInput);
+    this.searchButton = page.locator(homePageLocators.searchButton);
+    this.searchHistory = page.locator(homePageLocators.searchHistory);
+    this.userAvatar = page.locator(homePageLocators.userAvatar);
+    this.navMenu = page.locator(homePageLocators.navMenu);
+    this.videoCards = page.locator(homePageLocators.videoCards);
+    this.featuredSection = page.locator(homePageLocators.featuredSection);
+    this.liveSection = page.locator(homePageLocators.liveSection);
+    this.animeSection = page.locator(homePageLocators.animeSection);
+    this.gameSection = page.locator(homePageLocators.gameSection);
+    this.footer = page.locator(homePageLocators.footer);
   }
 
   /**
@@ -250,3 +258,4 @@ export class HomePage extends BasePage {
     await this.waitForNetworkIdle();
   }
 }
+

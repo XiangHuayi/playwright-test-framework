@@ -1,27 +1,53 @@
 import { Page } from '@playwright/test';
 import { BasePage } from '../base/BasePage';
+import { LocatorManager } from '../../utils/LocatorManager';
 
 export class RegisterPage extends BasePage {
-  // Locators
-  private readonly firstNameInput = '#customer\\.firstName';
-  private readonly lastNameInput = '#customer\\.lastName';
-  private readonly addressInput = '#customer\\.address\\.street';
-  private readonly cityInput = '#customer\\.address\\.city';
-  private readonly stateInput = '#customer\\.address\\.state';
-  private readonly zipCodeInput = '#customer\\.address\\.zipCode';
-  private readonly phoneInput = '#customer\\.phoneNumber';
-  private readonly ssnInput = '#customer\\.ssn';
-  private readonly usernameInput = '#customer\\.username';
-  private readonly passwordInput = '#customer\\.password';
-  private readonly confirmPasswordInput = '#repeatedPassword';
-  private readonly registerButton = '#customerForm input[type="submit"]';
-    private readonly registerButtonByValue = 'input[type="submit"][value="Register"]';
-  private readonly successMessage = 'h1.title';
-  private readonly errorMessages = '.error';
-  private readonly registerForm = '#customerForm';
+  // Page elements
+  private readonly firstNameInput: string;
+  private readonly lastNameInput: string;
+  private readonly addressInput: string;
+  private readonly cityInput: string;
+  private readonly stateInput: string;
+  private readonly zipCodeInput: string;
+  private readonly phoneInput: string;
+  private readonly ssnInput: string;
+  private readonly usernameInput: string;
+  private readonly passwordInput: string;
+  private readonly confirmPasswordInput: string;
+  private readonly registerButton: string;
+  private readonly registerButtonByValue: string;
+  private readonly successMessage: string;
+  private readonly errorMessages: string;
+  private readonly registerForm: string;
 
   constructor(page: Page) {
     super(page);
+    
+    // Load locators from YAML
+    const registerPageLocators = LocatorManager.getPageLocators('parabank.registerPage');
+    
+    if (!registerPageLocators) {
+      throw new Error('Failed to load locators for register page');
+    }
+    
+    // Initialize locators
+    this.firstNameInput = registerPageLocators.firstNameInput;
+    this.lastNameInput = registerPageLocators.lastNameInput;
+    this.addressInput = registerPageLocators.addressInput;
+    this.cityInput = registerPageLocators.cityInput;
+    this.stateInput = registerPageLocators.stateInput;
+    this.zipCodeInput = registerPageLocators.zipCodeInput;
+    this.phoneInput = registerPageLocators.phoneInput;
+    this.ssnInput = registerPageLocators.ssnInput;
+    this.usernameInput = registerPageLocators.usernameInput;
+    this.passwordInput = registerPageLocators.passwordInput;
+    this.confirmPasswordInput = registerPageLocators.confirmPasswordInput;
+    this.registerButton = registerPageLocators.registerButton;
+    this.registerButtonByValue = registerPageLocators.registerButtonByValue;
+    this.successMessage = registerPageLocators.successMessage;
+    this.errorMessages = registerPageLocators.errorMessages;
+    this.registerForm = registerPageLocators.registerForm;
   }
 
   /**
